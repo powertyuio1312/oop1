@@ -1,0 +1,30 @@
+﻿a{
+    color:#A0522D;
+    font-size: 50px;
+    font-family:'Arial Unicode MS';
+}
+
+
+hr{
+    height: 2px;
+    width:595px;
+    position:center;
+}
+h1 {
+                font-size: 63px;
+                font-family: Monaco, Courier, monospace;
+                color:#DEB887;
+                background-image:url(фонссыл.jpg);
+                background-repeat:no-repeat;
+                 background-position:center;
+                 background-size: 595px 200px;
+
+            }
+body {
+                 background-image:url(fon4.jpg);
+                 background-position:center 1px;
+                 
+                 background-size: 100% 60%;
+                
+            
+                  }
