@@ -1,0 +1,6 @@
+C:\Users\Полина\Desktop\ун\ООП\oop\КР1\КР1\bin\Debug\КР1.exe.config
+C:\Users\Полина\Desktop\ун\ООП\oop\КР1\КР1\bin\Debug\КР1.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\КР1\КР1\bin\Debug\КР1.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\КР1\КР1\obj\Debug\КР1.csprojResolveAssemblyReference.cache
+C:\Users\Полина\Desktop\ун\ООП\oop\КР1\КР1\obj\Debug\КР1.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\КР1\КР1\obj\Debug\КР1.pdb

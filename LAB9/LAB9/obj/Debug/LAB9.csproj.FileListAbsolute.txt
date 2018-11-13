@@ -1,0 +1,12 @@
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9\LAB9\bin\Debug\LAB9.exe.config
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9\LAB9\bin\Debug\LAB9.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9\LAB9\bin\Debug\LAB9.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9\LAB9\obj\Debug\LAB9.csprojResolveAssemblyReference.cache
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9\LAB9\obj\Debug\LAB9.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9\LAB9\obj\Debug\LAB9.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9 — копия\LAB9\bin\Debug\LAB9.exe.config
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9 — копия\LAB9\obj\Debug\LAB9.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9 — копия\LAB9\obj\Debug\LAB9.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9 — копия\LAB9\bin\Debug\LAB9.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9 — копия\LAB9\bin\Debug\LAB9.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB9 — копия\LAB9\obj\Debug\LAB9.csprojResolveAssemblyReference.cache
