@@ -1,0 +1,6 @@
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_9\LAB_9\bin\Debug\LAB_9.exe.config
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_9\LAB_9\bin\Debug\LAB_9.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_9\LAB_9\bin\Debug\LAB_9.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_9\LAB_9\obj\Debug\LAB_9.csprojResolveAssemblyReference.cache
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_9\LAB_9\obj\Debug\LAB_9.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_9\LAB_9\obj\Debug\LAB_9.pdb

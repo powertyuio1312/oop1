@@ -1,6 +1,0 @@
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB10\LAB10\bin\Debug\LAB10.exe.config
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB10\LAB10\bin\Debug\LAB10.exe
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB10\LAB10\bin\Debug\LAB10.pdb
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB10\LAB10\obj\Debug\LAB10.csprojResolveAssemblyReference.cache
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB10\LAB10\obj\Debug\LAB10.exe
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB10\LAB10\obj\Debug\LAB10.pdb

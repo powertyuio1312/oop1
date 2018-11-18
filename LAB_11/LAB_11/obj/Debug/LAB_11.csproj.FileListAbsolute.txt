@@ -1,0 +1,6 @@
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_11\LAB_11\bin\Debug\LAB_11.exe.config
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_11\LAB_11\bin\Debug\LAB_11.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_11\LAB_11\bin\Debug\LAB_11.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_11\LAB_11\obj\Debug\LAB_11.csprojResolveAssemblyReference.cache
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_11\LAB_11\obj\Debug\LAB_11.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB_11\LAB_11\obj\Debug\LAB_11.pdb

@@ -1,1 +1,0 @@
-#oop Kosovets Polina Olegovna

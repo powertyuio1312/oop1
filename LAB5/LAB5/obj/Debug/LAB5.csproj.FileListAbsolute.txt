@@ -1,6 +1,0 @@
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB5\LAB5\bin\Debug\LAB5.exe.config
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB5\LAB5\obj\Debug\LAB5.csprojResolveAssemblyReference.cache
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB5\LAB5\bin\Debug\LAB5.exe
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB5\LAB5\bin\Debug\LAB5.pdb
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB5\LAB5\obj\Debug\LAB5.exe
-C:\Users\Полина\Desktop\ун\ООП\oop\LAB5\LAB5\obj\Debug\LAB5.pdb
