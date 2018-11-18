@@ -1,0 +1,12 @@
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB4\LAB4\bin\Debug\LAB4.exe.config
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB4\LAB4\bin\Debug\LAB4.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB4\LAB4\bin\Debug\LAB4.pdb
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB4\LAB4\obj\Debug\LAB4.csprojResolveAssemblyReference.cache
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB4\LAB4\obj\Debug\LAB4.exe
+C:\Users\Полина\Desktop\ун\ООП\oop\LAB4\LAB4\obj\Debug\LAB4.pdb
+C:\Users\Полина\Desktop\ун\ООП\LAB\LAB4\LAB4\bin\Debug\LAB4.exe.config
+C:\Users\Полина\Desktop\ун\ООП\LAB\LAB4\LAB4\obj\Debug\LAB4.exe
+C:\Users\Полина\Desktop\ун\ООП\LAB\LAB4\LAB4\obj\Debug\LAB4.pdb
+C:\Users\Полина\Desktop\ун\ООП\LAB\LAB4\LAB4\bin\Debug\LAB4.exe
+C:\Users\Полина\Desktop\ун\ООП\LAB\LAB4\LAB4\bin\Debug\LAB4.pdb
+C:\Users\Полина\Desktop\ун\ООП\LAB\LAB4\LAB4\obj\Debug\LAB4.csprojResolveAssemblyReference.cache
