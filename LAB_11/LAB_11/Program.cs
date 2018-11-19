@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace LAB_11
 {
+   
     class Program
     {
         static void Main(string[] args)
@@ -14,9 +15,9 @@ namespace LAB_11
             Console.WriteLine("____________________1______________________");
             string[] month = {"January", "February", "Martch", "April", "May", "June", "July", "Augest", "September", "October", "November", "December" };
 
-            IEnumerable<string> nameL = month.Where(m => m.Length < 5); // запрос месяцев по длине строки
+            IEnumerable<string> nameL = month.Where(m => m.Length < 5); // запрос месяцев по длине строки , СИНТАКСИС ЗАПРОСОВ
 
-            //IEnumerable<int> nameLeng = from m in month
+            //IEnumerable<int> nameLeng = from m in month ТЕКУЧИЙ СИНТАКСИС
             //                            select m.Length;
 
             Console.WriteLine("( m.Length < 5 ):");
@@ -110,10 +111,10 @@ namespace LAB_11
             Console.WriteLine("Квадраты со стороной не более 15: ");
             IEnumerable<Rectangle> Kvad = from n in quadrat
                                           where n.Width < 15
-                                          select n;           //quadrat.Select(p => p.Width < 15);
+                                          select n;          
             foreach (Rectangle d in Kvad)
             {
-                Console.WriteLine(d);
+                Console.WriteLine(d.Width);
             }
 
             IEnumerable<double> rectangles = rectangle.Select(p => p.perimetre());
@@ -146,6 +147,45 @@ namespace LAB_11
                 Console.WriteLine(" \t {0}", z);
             }
 
+            Console.WriteLine("____________________5______________________");
+
+            string[] anim = { "Cat", "Dog", "Fox", "Wolf" };
+            int[] key = { 1, 3, 7, 4 };
+
+            var any = anim.Join(key, w => w.Length,q => q, (w, q) => new
+                {
+                    id = w,
+                    AnimalNameLength = string.Format("{0}", q),
+                }
+                );
+
+            Console.WriteLine("После Join:");
+            foreach (var item in any)
+            {
+                Console.WriteLine(" \t {0}", item);
+            }
         }
     }
+    /// LINQ - набор языковых и платформенных средств для написания структурированных,
+    ///безопасных в отношении типов запросов к локальным коллекциям объектов и
+    ///удаленным источникам данных (последовательность + элемент)
+    ///
+    ///Лямбда-выражение, которое принимает значение и возвращает результат
+    ///типа bool, называется предиkатом.
+    ///
+    /// Агрегирования: Count, Min (Скалярные значения)
+    /// Квантификаторы: Contains,Any (bool)
+    /// Над элементами: First, ElementAt
+    /// 
+
+    ///Операция Select используется для создания выходной последовательности одного типа элементов из входной последовательности элементов другого типа. Эти типы не обязательно должны совпадать.
+    ///Операция Take возвращает указанное количество элементов из входной последовательности, начиная с ее начала.
+    ///Операция Skip пропускает указанное количество элементов из входной последовательности, начиная с ее начала, и выводит остальные.
+    ///Операция Concat соединяет две входные последовательности и выдает одну выходную последовательность. 
+    ///Операция OrderBy позволяет упорядочить входную последовательность на основе метода keySelector, который возвращает значение ключа для каждого входного элемента.
+    ///Операция Join выполняет внутреннее соединение по эквивалентности двух последовательностей на основе ключей, извлеченных из каждого элемента этих последовательностей.
+    ///Операция Distinct удаляет дублированные элементы из входной последовательности.
+    ///Операция Сoncat (соед двух множеств)
+    ///Операция Union (соединение множеств с удаление дубликатов) возвращает объединение множеств из двух исходных последовательностей.
+    ///Операция Intersect возвращает пересечение множеств из двух исходных последовательностей.
 }
