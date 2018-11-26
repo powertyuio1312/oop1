@@ -9,68 +9,66 @@ using System.IO;
 
 namespace LAB12
 {
-    public static class Reflector
+    public class Reflector
     {
-        
-        public static string InterfaceInfo(Type type) // интерфейсы
+        public Type type;
+
+        public Reflector (string type)
         {
-            string InfInterf = "Interface info:  \r\n";
+            this.type = Type.GetType(type, false, true);
+        }
+
+        public void InterfaceInfo() // интерфейсы
+        {
+           
 
             Console.WriteLine("Реализованные интерфейсы:");
             foreach(Type i in type.GetInterfaces())
             {
-                InfInterf += i.Name + "\r\n";
+                Console.WriteLine( i.Name + "\r\n");
             }
-            return InfInterf;
         }
 
-        public static string MethodsInfo(Type type) // методы
+        public void MethodsInfo() // методы
         {
-            string InfMethod = "Method Info: \r\n";
-
             Console.WriteLine("Реализованные публичные методы:");
             foreach (MethodInfo method in type.GetMethods())
             {
                 string modif="";
                 if (method.IsPublic)
                 {
-                    modif = "public";
-                    InfMethod += modif + method.ReturnType.Name + " " + method.Name + "\r\n";
+                    modif = "public ";
+                    Console.WriteLine( modif + method.ReturnType.Name + " " + method.Name + "\r\n");
                 }
                
             }
-            return InfMethod;
         }
 
-        public static string FieldsInfo(Type type)   // поля
+        public void FieldsInfo()   // поля
         {
-            string InfField = "Fields Info: \r\n";
-
             Console.WriteLine("Реализованные поля:");
             foreach (FieldInfo fields in type.GetFields())
             {
-                InfField+= fields.FieldType + " " + fields.Name + "\r\n";
+                Console.WriteLine( fields.FieldType + " " + fields.Name + "\r\n");
             }
 
             Console.WriteLine("Реализованные свойства:");
             foreach (PropertyInfo prop in type.GetProperties())
             {
-                InfField += prop.PropertyType+ " " + prop.Name + "\r\n";
+                Console.WriteLine( prop.PropertyType+ " " + prop.Name + "\r\n");
             }
-            return InfField;
         }
 
-        public static string MethodParamInfo( Type param)//выводит по имени класса имена методов, которые содержат
+        public void MethodParamInfo()//выводит по имени класса имена методов, которые содержат
                                                                 //заданный(пользователем) тип параметра(имя класса
                                                                 //передается в качестве аргумента);
         {
             Console.WriteLine("Введите тип параметра");
             string parametr = Console.ReadLine();
-            string MethodParam = "Method with param Info: \r\n";
 
             bool flag = false;
 
-            foreach (MethodInfo meth in param.GetMethods())
+            foreach (MethodInfo meth in type.GetMethods())
             {
                 foreach (ParameterInfo par in meth.GetParameters())
                 {
@@ -78,27 +76,27 @@ namespace LAB12
                     {
                         flag = true;
                     }
+                    if (flag)
+                    {
+                        Console.WriteLine(meth.Name + " " + meth.ReturnParameter + "\r\n");
+                        flag = false;
+                    }
                 }
-                if (flag)
-                {
-                    MethodParam += meth.Name + "\r\n";
-                    flag = false;
-                }
+                
             }
-            return MethodParam;
         }
 
        
-        public static void InFile(Type type) //выводит всё содержимое класса в текстовый файл
+        //public static void InFile(Type type) //выводит всё содержимое класса в текстовый файл
                                                                                                
-        {
-            string FileName = type.Name + ".txt";
-            using (StreamWriter SWfile = new StreamWriter(FileName))
-            {
-                SWfile.WriteLine(FieldsInfo(type));
-                SWfile.WriteLine(InterfaceInfo(type));
-                SWfile.WriteLine(MethodsInfo(type));
-            }
-        }
+        //{
+        //    string FileName = type.Name + ".txt";
+        //    using (StreamWriter SWfile = new StreamWriter(FileName))
+        //    {
+        //        SWfile.WriteLine(FieldsInfo(type));
+        //        SWfile.WriteLine(InterfaceInfo(type));
+        //        SWfile.WriteLine(MethodsInfo(type));
+        //    }
+        //}
     }
 }

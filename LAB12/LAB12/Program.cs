@@ -10,14 +10,19 @@ namespace LAB12
     {
         static void Main(string[] args)
         {
-            
-            Reflector.FieldsInfo(typeof(Owner));
-            Reflector.InterfaceInfo(typeof(Owner));
-            Reflector.MethodsInfo(typeof(Owner));
+            Reflector refl1 = new Reflector("Lab12.Book");
 
-            Reflector.FieldsInfo(typeof(Owner));
-            Reflector.InterfaceInfo(typeof(Book));
-            Reflector.MethodsInfo(typeof(Book));
+            refl1.FieldsInfo();
+            refl1.InterfaceInfo();
+            refl1.MethodsInfo();
+            refl1.MethodParamInfo();
+
+            Reflector refl2 = new Reflector("Lab12.Owner");
+
+            refl2.FieldsInfo();
+            refl2.InterfaceInfo();
+            refl2.MethodsInfo();
+            refl2.MethodParamInfo();
             
         }
     }
