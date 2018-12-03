@@ -65,21 +65,17 @@ namespace LAB12
         {
             Console.WriteLine("Введите тип параметра");
             string parametr = Console.ReadLine();
-
-            bool flag = false;
+            
 
             foreach (MethodInfo meth in type.GetMethods())
             {
                 foreach (ParameterInfo par in meth.GetParameters())
                 {
-                    if (!parametr.Equals(par))
+                    if (par.ToString().Contains(parametr))
                     {
-                        flag = true;
-                    }
-                    if (flag)
-                    {
+                        
                         Console.WriteLine(meth.Name + " " + meth.ReturnParameter + "\r\n");
-                        flag = false;
+                        
                     }
                 }
                 
