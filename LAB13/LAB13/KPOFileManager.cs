@@ -19,7 +19,7 @@ namespace LAB13
 
             string filename = filepath + "\\" + "kpodirinfo.txt";
             FileInfo file = new FileInfo(filename);
-
+            
             using (FileStream fstream = new FileStream(filename, FileMode.Create)) //FileMode перечисление, указывает на режим доступа к файл
             {
                 
