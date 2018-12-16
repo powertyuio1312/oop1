@@ -10,6 +10,8 @@ namespace LAB16
 {
     class Tasker
     {
+        // вывести ид задачи и ее статус
+        // оценить производительность StopWatch
         public static void GetTask(int size, int num)
         {
             Stopwatch watch = new Stopwatch(); // 1.2
@@ -20,12 +22,12 @@ namespace LAB16
             Task task = Task.Factory.StartNew(() => vec = vec * num);
             Console.WriteLine("STATUS: " + task.Status); //1.1
 
-            task.Wait();//Чтобы указать, что метод Main должен подождать до конца выполнения задачи,
-                        //нам надо использовать метод Wait
+            task.Wait();// ждет, когда задача выполнится
 
-            watch.Stop();
+            watch.Stop(); // останавливает измерение затрач времени
 
-            Console.WriteLine(watch.Elapsed);
+            Console.WriteLine("Затраченное время: {0}",watch.Elapsed); // возвр затраченное время
+            Console.WriteLine();
         }
 
         public static async Task FourSum(Vector one, Vector two, Vector three)
@@ -44,10 +46,9 @@ namespace LAB16
             Task task5 = task4.ContinueWith(Display); // ContinueMith (4.1)
 
             task4.Start();
-            task5.Wait(); //Чтобы указать, что метод Main должен подождать до конца выполнения задачи,
-                          //нам надо использовать метод Wait
+            task5.Wait();
 
-            Console.WriteLine(task4.Result.Sum());
+            Console.WriteLine("Res : {0}", task4.Result.Sum());
         }
 
         public static void Display(Task task)

@@ -30,6 +30,7 @@ namespace LAB16
             int res = await FactorialAsync(32); // (8) приостановить выполнение метода, пока задача не завершится
             Thread.Sleep(3);
             Console.WriteLine("Number factorial {0} is {1}", 32, res);
+            Console.WriteLine();
         }
 
         static CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
@@ -39,11 +40,11 @@ namespace LAB16
         static void Main(string[] args)
         {
             
-
-
             Tasker.GetTask(10000000, 1);
             Tasker.GetTask(10000000, 2);
             Tasker.GetTask(10000000, 3);
+
+            Tasker.FourSum(new Vector(100), new Vector(40), new Vector(50)).GetAwaiter().GetResult(); // (4.2)
 
             Task task = new Task(() => // 2
             {
@@ -54,11 +55,13 @@ namespace LAB16
                 }
             });
 
-            Tasker.FourSum(new Vector(100), new Vector(40), new Vector(50)).GetAwaiter().GetResult(); // (4.2)
+            
 
             Paralleler.For();
             Paralleler.ForEach();
             Paralleler.DoubleTask(1000000);
+
+            Store.StoreWork();
 
             Task t = DisdlayResAsync();
             t.Wait();

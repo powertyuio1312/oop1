@@ -45,11 +45,11 @@ namespace LAB16
             return sum;
         }
 
-        public static Vector operator *(Vector vec, int n)
+        public static Vector operator *(Vector vec, int number)
         {
             for (int i=0; i<vec.vector.Count; i++)
             {
-                vec.vector[i] *= n;
+                vec.vector[i] *= number;
             }
             return vec;
         }

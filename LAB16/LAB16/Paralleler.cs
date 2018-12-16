@@ -19,6 +19,7 @@ namespace LAB16
         {
             Console.WriteLine("Current: {0}", Task.CurrentId);
             Thread.Sleep(3000);
+            Console.WriteLine();
         }
 
         public static void DoubleTask(int n)
@@ -28,6 +29,7 @@ namespace LAB16
                 Console.WriteLine("Current: {0}", Task.CurrentId);
                 Thread.Sleep(300);
                 Generate(n);
+                Console.WriteLine();
             },
                                                        ()=> Generate(n));
         }
@@ -51,6 +53,7 @@ namespace LAB16
             Parallel.For(1, 10000, Generate);
             watch.Stop();
             Console.WriteLine("Parallel cycle: {0}", watch.Elapsed);
+            Console.WriteLine();
         }
 
         //Foreach
@@ -76,6 +79,7 @@ namespace LAB16
             ParallelLoopResult res = Parallel.ForEach<int>(new List<int>() { 10000, 10000 }, Generate);
             watch.Stop();
             Console.WriteLine("Parallel cycle: {0}", watch.Elapsed);
+            Console.WriteLine();
         }
     }
 }
